@@ -1,0 +1,44 @@
+/* styles/TableRow.module.css (assuming this is for individual table rows) */
+
+.wrapper {
+  width: 100%;
+  min-height: 60px; /* Slightly increased height for better readability */
+  background-color: #172a42; /* Dark Solana blue */
+  border-top: 1px solid #2c497f; /* Darker blue top border */
+  border-bottom: 1px solid #2c497f; /* Darker blue bottom border */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px; /* Adjusted padding */
+  color: #f9f0e7; /* Light beige text */
+  font-size: 1rem; /* Default font size */
+}
+
+.wrapper:last-child {
+  border-bottom: none;
+}
+
+/* You can add more specific styles for elements within the row if needed */
+/* For example, if each row contains an amount and an address: */
+
+.amount {
+  font-weight: 500;
+  color: #00ff8d; /* Solana green for amounts */
+}
+
+.address {
+  font-size: 0.9rem;
+  color: #ccc; /* Light gray for addresses */
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 60%; /* Adjust as needed */
+}
+
+/* If you have other elements in the row, style them here */
+.label {
+  font-weight: 600;
+  color: #f9f0e7;
+  margin-right: 10px;
+}

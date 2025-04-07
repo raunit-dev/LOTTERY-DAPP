@@ -1,0 +1,79 @@
+/* styles/TransactionHistory.module.css (assuming this is for transaction history) */
+
+.wrapper {
+  width: 80%;
+  max-width: 600px; /* Adjusted max-width for better responsiveness */
+  display: flex;
+  margin: 60px auto; /* Increased top margin for spacing */
+  align-items: center;
+  border-radius: 1.5rem; /* Slightly less rounded for a cleaner look */
+  overflow: hidden;
+  flex-direction: column;
+  background-color: #172a42; /* Dark Solana blue */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Modern shadow */
+  border: 1px solid #2c497f; /* Darker blue border */
+}
+
+.tableHeader {
+  width: 100%;
+  min-height: 60px; /* Reduced height */
+  background-color: #2c497f; /* Darker blue header */
+  color: #f9f0e7; /* Light beige text */
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between;
+  padding: 15px 30px; /* Adjusted padding */
+  border-bottom: 1px solid #3e5e94; /* Slightly lighter border */
+}
+
+.rows {
+  width: 100%;
+  padding: 20px 30px; /* Added padding around rows */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Reduced gap */
+  color: #f9f0e7; /* Light beige text */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0; /* Added padding within each row */
+  border-bottom: 1px solid #3e5e94; /* Separator for rows */
+}
+
+.row:last-child {
+  border-bottom: none; /* Remove border from the last row */
+}
+
+.amountTitle {
+  font-size: 1.1rem; /* Slightly smaller */
+  font-weight: 600; /* Stronger bold */
+  color: #00ff8d; /* Solana green */
+  text-transform: uppercase; /* Added uppercase */
+  letter-spacing: 0.5px; /* Slight letter spacing */
+}
+
+.addressTitle {
+  font-size: 1.1rem; /* Slightly smaller */
+  font-weight: 600; /* Stronger bold */
+  color: #00ff8d; /* Solana green */
+  text-transform: uppercase; /* Added uppercase */
+  letter-spacing: 0.5px; /* Slight letter spacing */
+  text-align: right; /* Align address title to the right */
+}
+
+.amount {
+  font-weight: 500;
+}
+
+.address {
+  font-size: 0.9rem; /* Slightly smaller address */
+  color: #ccc; /* Light gray for less emphasis */
+  text-align: right;
+  overflow: hidden; /* Handle long addresses */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 60%; /* Limit width for long addresses */
+}

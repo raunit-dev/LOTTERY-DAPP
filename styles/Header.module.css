@@ -1,0 +1,63 @@
+/* styles/Header.module.css */
+.wrapper {
+  background-color: #172a42; /* Dark blue Solana background */
+  width: 100%;
+  min-height: 60px; /* Increased height for better visual presence */
+  color: #f9f0e7; /* Light beige text for contrast */
+  display: flex;
+  align-items: center;
+  padding: 15px 20px; /* Increased padding */
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10; /* Ensure it stays on top */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  border-bottom: 1px solid #2c497f; /* Darker blue border */
+}
+
+.title {
+  margin-left: 10px; /* Reduced left margin */
+  font-size: 2.2rem; /* Slightly larger title */
+  cursor: pointer;
+  font-weight: 700; /* Stronger bold */
+  color: #00ff8d; /* Vibrant Solana green */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.5px; /* Slight letter spacing for a modern look */
+}
+
+.solanaLogo {
+  font-size: 2.5rem; /* Slightly larger Solana logo */
+  color: #00ff8d; /* Solana green */
+  margin-right: 10px;
+  text-shadow: 0 0 5px rgba(0, 255, 141, 0.8); /* Glowing effect */
+}
+
+/* Style for the WalletMultiButton (Solana Wallet Adapter) */
+.walletButton {
+  margin-right: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 2px solid #00ff8d; /* Solana green border */
+  background-color: transparent; /* Transparent background */
+  border-radius: 2rem;
+  padding: 10px 20px;
+  color: #00ff8d; /* Solana green text */
+  font-weight: 600;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.walletButton:hover {
+  background-color: rgba(0, 255, 141, 0.1); /* Slightly lighter background on hover */
+  color: #f9f0e7; /* Change text color on hover */
+  border-color: #00b86b; /* Slightly darker green on hover */
+}
+
+/* You can further style the dropdown and connected state of the WalletMultiButton if needed */
+/* For example:
+.wallet-adapter-button { ... }
+.wallet-adapter-button-connected { ... }
+.wallet-adapter-dropdown { ... }
+*/

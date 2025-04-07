@@ -1,0 +1,110 @@
+/* styles/LotteryBox.module.css (assuming you'll use this for these styles) */
+
+.wrapper {
+  background-color: #172a42; /* Dark Solana blue */
+  min-height: 250px; /* Slightly increased min-height */
+  width: 60%; /* Slightly wider */
+  margin: 40px auto; /* Centered with top margin */
+  border-radius: 2.5rem; /* Slightly more rounded */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* More pronounced, modern shadow */
+  display: flex;
+  padding: 30px; /* Increased padding */
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  border: 1px solid #2c497f; /* Darker blue border */
+}
+
+.title {
+  font-size: 2.5rem; /* Larger title */
+  font-weight: 700; /* Stronger bold */
+  color: #00ff8d; /* Solana green */
+  text-align: center;
+  margin-bottom: 30px; /* Increased margin */
+  text-shadow: 0 0 5px rgba(0, 255, 141, 0.5); /* Subtle glow */
+}
+
+.pot {
+  font-size: 1.8rem; /* Slightly larger pot text */
+  font-weight: 600; /* Stronger weight */
+  color: #f9f0e7; /* Light beige text */
+  text-align: center;
+  margin-bottom: 10px; /* Added margin */
+}
+
+.potAmount {
+  font-size: 2rem; /* Larger pot amount */
+  font-weight: 700; /* Stronger bold */
+  color: #00ff8d; /* Solana green */
+  text-align: center;
+  text-shadow: 0 0 5px rgba(0, 255, 141, 0.7); /* More noticeable glow */
+}
+
+.btn {
+  background-color: #2c497f; /* Darker blue button background */
+  width: 60%; /* Slightly wider button */
+  display: flex;
+  justify-content: center;
+  align-self: center; /* Center button */
+  color: #f9f0e7; /* Light beige button text */
+  padding: 18px 36px; /* Increased padding */
+  text-align: center;
+  text-decoration: none;
+  margin-top: 30px; /* Increased margin */
+  cursor: pointer;
+  border-radius: 2rem; /* More rounded button */
+  font-weight: 600; /* Stronger bold */
+  font-size: 1.6rem; /* Slightly larger font */
+  border: 2px solid #00ff8d; /* Solana green border */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.btn:hover {
+  background-color: #00ff8d; /* Solana green on hover */
+  color: #172a42; /* Dark blue text on hover */
+  border-color: #00b86b; /* Slightly darker green border on hover */
+}
+
+.recentWinnerTitle {
+  font-size: 1.6rem; /* Slightly larger title */
+  font-weight: 600; /* Stronger weight */
+  color: #f9f0e7; /* Light beige text */
+  text-align: center;
+  margin-top: 30px; /* Increased margin */
+}
+
+.winner {
+  font-size: 1.8rem; /* Slightly larger winner text */
+  font-weight: 700; /* Stronger bold */
+  color: #00ff8d; /* Solana green */
+  text-align: center;
+  text-shadow: 0 0 5px rgba(0, 255, 141, 0.7); /* Noticeable glow */
+  margin-top: 5px; /* Added margin */
+}
+
+.textAccent {
+  color: #00ff8d; /* Solana green */
+  font-weight: 700; /* Stronger bold */
+}
+
+.drawWinnerBtn {
+  background-color: transparent; /* Transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto 0; /* Adjusted margin */
+  width: auto; /* Adjust width based on content */
+  border: 2px solid #00ff8d; /* Solana green border */
+  border-radius: 1.5rem; /* Slightly more rounded */
+  padding: 12px 24px; /* Adjusted padding */
+  font-size: 1.4rem; /* Slightly larger font */
+  font-weight: 600; /* Stronger bold */
+  cursor: pointer;
+  color: #00ff8d; /* Solana green text */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.drawWinnerBtn:hover {
+  background-color: rgba(0, 255, 141, 0.15); /* Slightly lighter green background on hover */
+  color: #f9f0e7; /* Light beige text on hover */
+  border-color: #00b86b; /* Slightly darker green border on hover */
+}
